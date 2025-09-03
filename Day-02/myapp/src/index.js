@@ -1,15 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Name  from './Name';
+
+import Header from './components/Header'
+import Body from './components/Body'
+import Footer from './components/Footer'
+import StudentInfo  from './components/StudentInfo'
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const Student = {
+  type : "Azha",
+  age : 24
+
+}
 root.render(
   <React.StrictMode>
-    <App />
-    <Name /> 
+    
+    <Header content="Welcome!" value="React World" />
+    <Body />
+      <StudentInfo student={Student} /> 
+    <Footer />
+    
   </React.StrictMode>
 );
 

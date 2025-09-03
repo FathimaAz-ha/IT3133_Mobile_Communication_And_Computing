@@ -7,4 +7,4 @@ function Name(){
     )
 }
 
-export default Name //importing
+export default Name //exporting
