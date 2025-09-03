@@ -1,4 +1,4 @@
-# React Learning – Day 2
+# React Learning – Day 3
 
 ## 📅 Day 2 Progress
 On the second day of my React learning journey, I focused on building a **webpage layout** using multiple components and explored **props** to pass data between them.
