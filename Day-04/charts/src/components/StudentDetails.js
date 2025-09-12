@@ -8,9 +8,9 @@ function StudentDetails(params){
       
         <table border={1}>
             <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Course</td>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
             </tr>
 
             {
