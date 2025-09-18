@@ -18,7 +18,7 @@ const [state, setState] = useState(initialValue);
 
 ---
 
-## Explanation of useState in the Code
+## Explanation of useState in the Code - codes are updated in the day-04/charts/components/studentDetails.js
 
 1. **Greeting Message (`greet`)**
    - Declared as:  
