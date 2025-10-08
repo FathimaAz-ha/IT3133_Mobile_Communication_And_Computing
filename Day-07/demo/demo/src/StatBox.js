@@ -31,7 +31,7 @@ function useCountUp(target, duration) {
 }
 
 //if you are returning a UI element no need to use any parameters 
-function StatBox() {
+ function StatBox() {
 
     const students = useCountUp(1000, 2000); //duration in ms
     const alumni = useCountUp(10000, 2000);

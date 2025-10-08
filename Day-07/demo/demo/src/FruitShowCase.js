@@ -27,7 +27,7 @@ function FruitShowCase(){
         }, 3000);
     
         // Cleanup function to clear the interval when the component unmounts
-        return () => clearInterval(interval);
+       return () => clearInterval(interval);
       }, [allFruits.length]); // Dependency array ensures the effect runs when allFruits.length changes
     return(
         <div className="container">
