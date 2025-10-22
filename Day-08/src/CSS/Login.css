@@ -1,0 +1,17 @@
+html, body{
+    background-color: cornflowerblue;
+}
+.container{
+    height : 500px; 
+    width : 450px; 
+    background-color: white;
+    margin-left : auto;
+    margin-right : auto;
+
+
+}
+
+.toggleLink{
+    color: blue; 
+    text-decoration: underline;
+}
