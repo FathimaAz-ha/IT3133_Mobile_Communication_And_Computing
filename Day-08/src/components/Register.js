@@ -1,9 +1,11 @@
-
-function Register(){
+import Login from '../components/Login'
+function Register({onToggle}){
 return (
     <div className="container">
-        <h2>Register</h2>
+        <center>
+        
         <form>
+        <h2>Register</h2>
             <label for="name"> Name <br></br>
             <input type="text" id="name" name="name"></input></label>
             <br></br>
@@ -16,11 +18,12 @@ return (
 
             <label for="cpassword">Email <br></br>
             <input type="password" id="cpassword" name="cpassword"></input></label>
-            <br></br>
+            <br></br><br></br>
             <button>Register</button>
 
                 <p>Already Have an account?<span onClick={onToggle} className='toggleLink' >Login</span></p>
         </form>
+        </center>
     </div>
 
 )
