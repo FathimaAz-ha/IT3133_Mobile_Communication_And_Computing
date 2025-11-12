@@ -50,21 +50,22 @@ export default function SplashScreen() {
   return (
     <View style={styles.container}>
 
-      <TouchableOpacity style={styles.navBtn} onPress={gotoHome}>
-        <Text style={styles.navTxt}>Skip </Text>
+      <TouchableOpacity style={styles.skipBtn} onPress={gotoHome}>
+        <Text style={styles.skipText}> Skip </Text>
       </TouchableOpacity>
-      
+
       <Lottie animationData={screens[step].animation}
         loop autoPlay style={styles.animation}
-      >
+      >    
+      </Lottie>
         <Text style={styles.title}>{screens[step].title}</Text>
         <Text style={styles.subtitle}>{screens[step].subtitle}</Text>
-      </Lottie>
+  
       <View style={styles.btnRow}>
 
         {step > 0 ? (
-          <TouchableOpacity style={styles.navBtn} onPress={previous}>
-            <Text style={styles.navTxt}>Previous</Text>
+          <TouchableOpacity style={styles.getBtn} onPress={previous}>
+            <Text style={styles.getTxt}>Previous</Text>
           </TouchableOpacity>
         ) : (
           <View style={{ width: 60 }} />
@@ -76,8 +77,8 @@ export default function SplashScreen() {
               <Text style={styles.getTxt}>Get Started </Text>
             </TouchableOpacity>
           ) : (
-            <TouchableOpacity style={styles.navBtn} onPress={next}>
-              <Text style={styles.navTxt}>Get Started </Text>
+            <TouchableOpacity style={styles.getBtn} onPress={next}>
+              <Text style={styles.getTxt}>Next </Text>
             </TouchableOpacity>
           )
         }
